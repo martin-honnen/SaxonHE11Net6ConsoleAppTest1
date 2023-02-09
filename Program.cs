@@ -2,9 +2,9 @@
 using net.liberty_development.SaxonHE11s9apiExtensions;
 using System.Reflection;
 
-// force loading of updated xmlresolver
-ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver"));
-ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver_data"));
+// force loading of updated xmlresolver (no longer necessary for Saxon HE 11.5)
+//ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver"));
+//ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver_data"));
 
 var processor = new Processor(false);
 
